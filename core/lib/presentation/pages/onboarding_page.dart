@@ -1,4 +1,4 @@
-import 'package:auth/sign_in/login_page.dart';
+import 'package:auth/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:core/core.dart';
 
