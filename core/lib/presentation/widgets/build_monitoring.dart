@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:core/core.dart';
-import 'package:petani_tambak/presentation/pages/detail_page.dart';
+import 'package:core/presentation/pages/detail_page.dart';
 import 'package:readmore/readmore.dart';
 
 class BuildMonitoring extends StatelessWidget {

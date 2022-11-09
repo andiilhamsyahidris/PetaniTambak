@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:core/core.dart';
-import 'package:petani_tambak/presentation/widgets/build_activity.dart';
+import 'package:core/presentation/widgets/build_activity.dart';
 import 'package:readmore/readmore.dart';
 
 class DetailPage extends StatefulWidget {

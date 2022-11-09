@@ -1,3 +1,4 @@
+import 'package:auth/sign_in/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:core/core.dart';
 
@@ -46,7 +47,7 @@ class OnBoardingPage extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.popAndPushNamed(context, '/home');
+                  Navigator.popAndPushNamed(context, LoginPage.routeName);
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: kButtonColor,

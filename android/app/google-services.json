@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "34669112744",
+    "project_id": "petanitambak-cf143",
+    "storage_bucket": "petanitambak-cf143.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34669112744:android:2e8d595eef8a2ca52e419d",
+        "android_client_info": {
+          "package_name": "com.example.petani_tambak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34669112744-miit6qdtimjiuhglggt8bdumaojls97h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXO3k8UHRVksWeFM_rD7refekFt1taG0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "34669112744-miit6qdtimjiuhglggt8bdumaojls97h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "34669112744-7go2n8d16ud9outjsao8p3dg6d9d3dcm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.petaniTambak"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:core/core.dart';
-import 'package:petani_tambak/presentation/pages/profile_page.dart';
-import 'package:petani_tambak/presentation/widgets/build_dashboard.dart';
-import 'package:petani_tambak/presentation/widgets/build_indicator.dart';
-import 'package:petani_tambak/presentation/widgets/build_monitoring.dart';
+import 'package:core/presentation/pages/profile_page.dart';
+import 'package:core/presentation/widgets/build_dashboard.dart';
+import 'package:core/presentation/widgets/build_indicator.dart';
+import 'package:core/presentation/widgets/build_monitoring.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});

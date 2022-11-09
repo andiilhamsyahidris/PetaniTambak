@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:core/core.dart';
-import 'package:petani_tambak/presentation/pages/detail_page.dart';
+import 'package:core/presentation/pages/detail_page.dart';
 import 'package:readmore/readmore.dart';
 
 class ProfilePage extends StatefulWidget {

@@ -1,6 +1,6 @@
-name: core
+name: auth
 description: A new Flutter package project.
-publish_to: none
+publish_to: 'none'
 version: 0.0.1
 homepage:
 
@@ -12,13 +12,10 @@ dependencies:
   flutter:
     sdk: flutter
   
-  auth:
-    path: ../auth
+  core:
+    path: ../core
   
-  intl: ^0.17.0
-  flutter_svg: ^1.1.5
-  readmore: ^2.2.0
-
+  firebase_auth: ^4.1.1
 
 dev_dependencies:
   flutter_test:
@@ -27,4 +24,4 @@ dev_dependencies:
 
 flutter:
 
-  
+
