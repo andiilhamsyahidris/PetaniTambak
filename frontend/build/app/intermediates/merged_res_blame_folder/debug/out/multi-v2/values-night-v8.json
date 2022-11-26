@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\KULIAH\\Belajar Dart\\Belajar Flutter\\PetaniTambak\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "D:\\KULIAH\\Belajar Dart\\Belajar Flutter\\PetaniTambak\\frontend\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\KULIAH\\Belajar Dart\\Belajar Flutter\\PetaniTambak\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\KULIAH\\Belajar Dart\\Belajar Flutter\\PetaniTambak\\frontend\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

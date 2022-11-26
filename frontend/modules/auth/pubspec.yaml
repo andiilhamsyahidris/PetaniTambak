@@ -1,0 +1,30 @@
+name: auth
+description: A new Flutter package project.
+publish_to: 'none'
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  core:
+    path: ../core
+  monitoring:
+    path: ../monitoring
+  
+  firebase_auth: ^4.1.1
+  google_sign_in: ^5.4.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+
+

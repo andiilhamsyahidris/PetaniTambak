@@ -12,10 +12,12 @@ dependencies:
   flutter:
     sdk: flutter
   core:
-    path: core
+    path: modules/core
   auth:
-    path: auth
-    
+    path: modules/auth
+  monitoring:
+    path: modules/monitoring
+
   cupertino_icons: ^1.0.2
   firebase_core: ^2.1.1
 

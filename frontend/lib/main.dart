@@ -3,11 +3,8 @@ import 'package:auth/sign_up/signup_page.dart';
 import 'package:core/core.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:monitoring/monitoring.dart';
 import 'package:petani_tambak/firebase_options.dart';
-import 'package:core/presentation/pages/detail_page.dart';
-import 'package:core/presentation/pages/homepage.dart';
-import 'package:core/presentation/pages/profile_page.dart';
-import 'package:core/presentation/pages/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
