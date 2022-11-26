@@ -36,7 +36,9 @@ class _ProfilePageState extends State<ProfilePage> {
           IconButton(
             onPressed: () {
               Service.signOut();
-              Navigator.pushNamed(context, LoginPage.routeName);
+              Navigator.pop(context);
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => const LoginPage()));
             },
             icon: const Icon(
               Icons.logout,

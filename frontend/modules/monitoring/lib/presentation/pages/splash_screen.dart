@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:monitoring/monitoring.dart';
 
 class SplashScreen extends StatefulWidget {
+  static const routeName = '/splash';
   const SplashScreen({super.key});
 
   @override
