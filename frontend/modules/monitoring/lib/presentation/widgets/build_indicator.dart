@@ -17,7 +17,7 @@ class BuildIndicator extends StatelessWidget {
               gradient: LinearGradient(
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight,
-                  colors: [kGreenColor, kYellowColor, kRedColor]),
+                  colors: [kYellowColor, kGreenColor, kRedColor]),
             ),
           ),
           const SizedBox(
@@ -31,6 +31,24 @@ class BuildIndicator extends StatelessWidget {
                 Flexible(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 5,
+                        height: 10,
+                        decoration: const BoxDecoration(color: Colors.white),
+                      ),
+                      const SizedBox(
+                        height: 5.0,
+                      ),
+                      const Text(
+                        'Rendah',
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
+                  ),
+                ),
+                Flexible(
+                  child: Column(
                     children: [
                       Container(
                         width: 5,
@@ -59,25 +77,7 @@ class BuildIndicator extends StatelessWidget {
                         height: 5.0,
                       ),
                       const Text(
-                        'Normal',
-                        style: TextStyle(color: Colors.white),
-                      )
-                    ],
-                  ),
-                ),
-                Flexible(
-                  child: Column(
-                    children: [
-                      Container(
-                        width: 5,
-                        height: 10,
-                        decoration: const BoxDecoration(color: Colors.white),
-                      ),
-                      const SizedBox(
-                        height: 5.0,
-                      ),
-                      const Text(
-                        'Buruk',
+                        'Tinggi',
                         style: TextStyle(color: Colors.white),
                       )
                     ],
