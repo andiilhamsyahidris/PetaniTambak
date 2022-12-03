@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:auth/sign_in/login_page.dart';
 import 'package:auth/sign_up/signup_page.dart';
@@ -8,6 +9,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:monitoring/monitoring.dart';
 import 'package:petani_tambak/firebase_options.dart';
+
+late Directory dir;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -47,7 +50,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Petani Tambak',
-      theme: ThemeData().copyWith(colorScheme: kColorScheme),
+      theme: ThemeData().copyWith(
+          colorScheme: kColorScheme, scaffoldBackgroundColor: kMainColor),
       initialRoute: FirebaseAuth.instance.currentUser == null
           ? SplashScreen.routeName
           : '/home',

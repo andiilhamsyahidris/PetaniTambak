@@ -1,6 +1,7 @@
 import 'package:auth/auth.dart';
 import 'package:auth/service.dart';
 import 'package:auth/sign_in/login_page.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:core/common/constant.dart';
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
@@ -45,10 +46,13 @@ class _SignupPageState extends State<SignupPage> {
                   ),
                   Row(
                     children: [
-                      Image.asset(
-                        'assets/logopt.png',
-                        scale: 4,
-                      )
+                      CachedNetworkImage(
+                        imageUrl:
+                            'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/logopt.png?alt=media&token=bb2eae68-6356-4bd4-b26e-6c612132df87',
+                        placeholder: (context, url) =>
+                            const CircularProgressIndicator(),
+                        width: 50,
+                      ),
                     ],
                   ),
                   const SizedBox(

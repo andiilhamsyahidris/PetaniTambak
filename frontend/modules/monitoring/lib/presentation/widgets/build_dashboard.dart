@@ -1,5 +1,5 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:core/core.dart';
 
 class BuildDashboard extends StatefulWidget {
@@ -48,8 +48,10 @@ class _BuildDashboardState extends State<BuildDashboard> {
             width: 20,
           ),
           Expanded(
-            child: SvgPicture.asset(
-              'assets/dashboard.svg',
+            child: CachedNetworkImage(
+              imageUrl:
+                  'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/dashboard.png?alt=media&token=65fc146c-1bd6-4f2d-b8e0-77de34d5f4ef',
+              placeholder: (context, url) => const CircularProgressIndicator(),
               width: 140,
             ),
           ),

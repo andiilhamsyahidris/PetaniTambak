@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:core/core.dart';
 
@@ -19,7 +20,11 @@ class BuildActivity extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20.0),
           ),
-          leading: Image.asset('assets/test.png'),
+          leading: CachedNetworkImage(
+            imageUrl:
+                'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/test.png?alt=media&token=112fc3da-9dad-4598-88df-cbc5107a923b',
+            placeholder: (context, url) => const CircularProgressIndicator(),
+          ),
           title: Text(
             'Title',
             style: Theme.of(context)

@@ -1,11 +1,17 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:core/core.dart';
 import 'package:monitoring/monitoring.dart';
 import 'package:readmore/readmore.dart';
 
-class BuildMonitoring extends StatelessWidget {
+class BuildMonitoring extends StatefulWidget {
   const BuildMonitoring({super.key});
 
+  @override
+  State<BuildMonitoring> createState() => _BuildMonitoringState();
+}
+
+class _BuildMonitoringState extends State<BuildMonitoring> {
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -45,8 +51,11 @@ class BuildMonitoring extends StatelessWidget {
                                     blurRadius: 10.0,
                                     spreadRadius: 3.0)
                               ]),
-                          child: Image.asset(
-                            'assets/thermometer.png',
+                          child: CachedNetworkImage(
+                            imageUrl:
+                                'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/thermometer.png?alt=media&token=c923d6cb-b5bc-4d49-9399-8b8001e54baa',
+                            placeholder: (context, url) =>
+                                const CircularProgressIndicator(),
                             width: 50,
                           ),
                         ),
@@ -144,8 +153,11 @@ class BuildMonitoring extends StatelessWidget {
                                       blurRadius: 10.0,
                                       spreadRadius: 3.0)
                                 ]),
-                            child: Image.asset(
-                              'assets/salt.png',
+                            child: CachedNetworkImage(
+                              imageUrl:
+                                  'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/salt.png?alt=media&token=3bf63aec-6172-42cf-990a-8a564d7429c9',
+                              placeholder: (context, url) =>
+                                  const CircularProgressIndicator(),
                               width: 50,
                             ),
                           ),
@@ -241,8 +253,11 @@ class BuildMonitoring extends StatelessWidget {
                                       blurRadius: 10.0,
                                       spreadRadius: 3.0)
                                 ]),
-                            child: Image.asset(
-                              'assets/ph.png',
+                            child: CachedNetworkImage(
+                              imageUrl:
+                                  'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/ph.png?alt=media&token=392979fc-0a8d-432a-84d3-f112fe8daae0',
+                              placeholder: (context, url) =>
+                                  const CircularProgressIndicator(),
                               width: 50,
                             ),
                           ),

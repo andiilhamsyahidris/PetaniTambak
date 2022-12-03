@@ -1,7 +1,7 @@
 import 'package:auth/auth.dart';
 import 'package:auth/service.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:core/core.dart';
 import 'package:monitoring/monitoring.dart';
 import 'package:readmore/readmore.dart';
@@ -112,7 +112,12 @@ class _ProfilePageState extends State<ProfilePage> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0),
                         ),
-                        leading: Image.asset('assets/test.png'),
+                        leading: CachedNetworkImage(
+                          imageUrl:
+                              'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/test.png?alt=media&token=112fc3da-9dad-4598-88df-cbc5107a923b',
+                          placeholder: (context, url) =>
+                              const CircularProgressIndicator(),
+                        ),
                         title: Row(
                           children: [
                             Text(
@@ -127,8 +132,11 @@ class _ProfilePageState extends State<ProfilePage> {
                             const SizedBox(
                               width: 10,
                             ),
-                            SvgPicture.asset(
-                              'assets/mark.svg',
+                            CachedNetworkImage(
+                              imageUrl:
+                                  'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/mark.png?alt=media&token=044531dc-3623-4fbc-9fc5-0d7219a84ee1',
+                              placeholder: (context, url) =>
+                                  const CircularProgressIndicator(),
                               width: 15,
                             ),
                             Text(
@@ -159,7 +167,12 @@ class _ProfilePageState extends State<ProfilePage> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0),
                         ),
-                        leading: Image.asset('assets/test.png'),
+                        leading: CachedNetworkImage(
+                          imageUrl:
+                              'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/test.png?alt=media&token=112fc3da-9dad-4598-88df-cbc5107a923b',
+                          placeholder: (context, url) =>
+                              const CircularProgressIndicator(),
+                        ),
                         title: Row(
                           children: [
                             Text(
@@ -174,8 +187,11 @@ class _ProfilePageState extends State<ProfilePage> {
                             const SizedBox(
                               width: 10,
                             ),
-                            SvgPicture.asset(
-                              'assets/mark.svg',
+                            CachedNetworkImage(
+                              imageUrl:
+                                  'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/mark.png?alt=media&token=044531dc-3623-4fbc-9fc5-0d7219a84ee1',
+                              placeholder: (context, url) =>
+                                  const CircularProgressIndicator(),
                               width: 15,
                             ),
                             Text(
@@ -206,7 +222,12 @@ class _ProfilePageState extends State<ProfilePage> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0),
                         ),
-                        leading: Image.asset('assets/test.png'),
+                        leading: CachedNetworkImage(
+                          imageUrl:
+                              'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/test.png?alt=media&token=112fc3da-9dad-4598-88df-cbc5107a923b',
+                          placeholder: (context, url) =>
+                              const CircularProgressIndicator(),
+                        ),
                         title: Row(
                           children: [
                             Text(
@@ -221,8 +242,11 @@ class _ProfilePageState extends State<ProfilePage> {
                             const SizedBox(
                               width: 10,
                             ),
-                            SvgPicture.asset(
-                              'assets/mark.svg',
+                            CachedNetworkImage(
+                              imageUrl:
+                                  'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/mark.png?alt=media&token=044531dc-3623-4fbc-9fc5-0d7219a84ee1',
+                              placeholder: (context, url) =>
+                                  const CircularProgressIndicator(),
                               width: 15,
                             ),
                             Text(
@@ -298,8 +322,11 @@ class _ProfilePageState extends State<ProfilePage> {
                                         blurRadius: 10.0,
                                         spreadRadius: 3.0)
                                   ]),
-                              child: Image.asset(
-                                'assets/thermometer.png',
+                              child: CachedNetworkImage(
+                                imageUrl:
+                                    'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/thermometer.png?alt=media&token=c923d6cb-b5bc-4d49-9399-8b8001e54baa',
+                                placeholder: (context, url) =>
+                                    const CircularProgressIndicator(),
                                 width: 50,
                               ),
                             ),
@@ -396,8 +423,11 @@ class _ProfilePageState extends State<ProfilePage> {
                                         blurRadius: 10.0,
                                         spreadRadius: 3.0)
                                   ]),
-                              child: Image.asset(
-                                'assets/salt.png',
+                              child: CachedNetworkImage(
+                                imageUrl:
+                                    'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/salt.png?alt=media&token=3bf63aec-6172-42cf-990a-8a564d7429c9',
+                                placeholder: (context, url) =>
+                                    const CircularProgressIndicator(),
                                 width: 50,
                               ),
                             ),
@@ -493,8 +523,11 @@ class _ProfilePageState extends State<ProfilePage> {
                                         blurRadius: 10.0,
                                         spreadRadius: 3.0)
                                   ]),
-                              child: Image.asset(
-                                'assets/ph.png',
+                              child: CachedNetworkImage(
+                                imageUrl:
+                                    'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/ph.png?alt=media&token=392979fc-0a8d-432a-84d3-f112fe8daae0',
+                                placeholder: (context, url) =>
+                                    const CircularProgressIndicator(),
                                 width: 50,
                               ),
                             ),

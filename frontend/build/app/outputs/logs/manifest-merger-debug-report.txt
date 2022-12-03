@@ -41,6 +41,8 @@ INJECTED from D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\andro
 MERGED from D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\android\app\src\main\AndroidManifest.xml:1:1-34:12
 MERGED from [:firebase_auth] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:sqflite] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:google_sign_in_android] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\60455f47848b88c03b916134aaa9223d\transformed\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\ASUS\.gradle\caches\transforms-3\e1f5bf00836c889852a9a2014464d260\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
@@ -100,6 +102,10 @@ MERGED from [:firebase_auth] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak
 MERGED from [:firebase_auth] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:google_sign_in_android] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:google_sign_in_android] D:\KULIAH\Belajar Dart\Belajar Flutter\PetaniTambak\frontend\build\google_sign_in_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\60455f47848b88c03b916134aaa9223d\transformed\multidex-2.0.0\AndroidManifest.xml:20:5-43

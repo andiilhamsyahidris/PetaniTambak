@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:monitoring/monitoring.dart';
@@ -29,16 +30,25 @@ class SplashScreenState extends State<SplashScreen> {
       body: Stack(
         alignment: Alignment.center,
         children: [
-          Image.asset(
-            'assets/bg.png',
+          CachedNetworkImage(
+            imageUrl:
+                'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/bg.png?alt=media&token=3c51b506-8161-40cc-9596-c00aaabd3c82',
+            placeholder: (context, url) => const Center(
+              child: CircularProgressIndicator(),
+            ),
+            fadeInDuration: const Duration(milliseconds: 200),
             width: MediaQuery.of(context).size.width,
             fit: BoxFit.cover,
           ),
-          Image.asset(
-            'assets/logopt.png',
+          CachedNetworkImage(
+            imageUrl:
+                'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/logopt.png?alt=media&token=bb2eae68-6356-4bd4-b26e-6c612132df87',
+            placeholder: (context, url) => const Center(
+              child: CircularProgressIndicator(),
+            ),
             width: 150,
             height: 150,
-          )
+          ),
         ],
       ),
     );

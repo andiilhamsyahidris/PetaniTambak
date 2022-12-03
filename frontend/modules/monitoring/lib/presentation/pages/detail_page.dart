@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:core/core.dart';
 import 'package:monitoring/monitoring.dart';
@@ -77,8 +78,11 @@ class DetailPageState extends State<DetailPage> {
                                           blurRadius: 10.0,
                                           spreadRadius: 3.0)
                                     ]),
-                                child: Image.asset(
-                                  'assets/thermometer.png',
+                                child: CachedNetworkImage(
+                                  imageUrl:
+                                      'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/thermometer.png?alt=media&token=c923d6cb-b5bc-4d49-9399-8b8001e54baa',
+                                  placeholder: (context, url) =>
+                                      const CircularProgressIndicator(),
                                   width: 100,
                                 ),
                               ),

@@ -17,6 +17,8 @@ dependencies:
     path: ../core
   auth:
     path: ../auth
+  
+  cached_network_image: ^3.2.3
 
 dev_dependencies:
   flutter_test:
