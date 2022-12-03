@@ -46,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget _buildLoginPage() {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.only(left: 60.0, right: 60.0),
+        padding: const EdgeInsets.symmetric(horizontal: 35),
         child: CustomScrollView(
           slivers: [
             SliverList(

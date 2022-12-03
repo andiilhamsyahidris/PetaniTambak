@@ -36,7 +36,7 @@ class _SignupPageState extends State<SignupPage> {
       backgroundColor: kMainColor,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 60.0),
+          padding: const EdgeInsets.symmetric(horizontal: 35.0),
           child: CustomScrollView(
             slivers: [
               SliverList(
