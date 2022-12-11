@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">34669112744-miit6qdtimjiuhglggt8bdumaojls97h.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">34669112744</string>
+    <string name="google_api_key" translatable="false">AIzaSyAXO3k8UHRVksWeFM_rD7refekFt1taG0o</string>
+    <string name="google_app_id" translatable="false">1:34669112744:android:2e8d595eef8a2ca52e419d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAXO3k8UHRVksWeFM_rD7refekFt1taG0o</string>
+    <string name="google_storage_bucket" translatable="false">petanitambak-cf143.appspot.com</string>
+    <string name="project_id" translatable="false">petanitambak-cf143</string>
+</resources>
