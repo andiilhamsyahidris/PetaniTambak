@@ -58,16 +58,6 @@ class HomepageState extends State<Homepage> {
                   BuildIndicator(),
                 ],
               ),
-              Text(
-                'Monitoring',
-                style: Theme.of(context)
-                    .textTheme
-                    .titleSmall!
-                    .copyWith(color: Colors.white),
-              ),
-              const SizedBox(
-                height: 15,
-              ),
               const BuildMonitoring(),
             ],
           ),

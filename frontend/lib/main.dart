@@ -62,6 +62,8 @@ class _MyAppState extends State<MyApp> {
             return MaterialPageRoute(builder: (_) => const Homepage());
           case DetailPage.routeName:
             return MaterialPageRoute(builder: (_) => const DetailPage());
+          case DetailSaltPage.routeName:
+            return MaterialPageRoute(builder: (_) => const DetailSaltPage());
           case ProfilePage.routeName:
             return MaterialPageRoute(builder: (_) => const ProfilePage());
           case LoginPage.routeName:

@@ -1,4 +1,4 @@
-#Sat Dec 03 22:12:36 SGT 2022
+#Sun Dec 11 19:27:26 SGT 2022
 base.1=D\:\\KULIAH\\Belajar Dart\\Belajar Flutter\\PetaniTambak\\frontend\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
 path.1=classes2.dex
 base.0=D\:\\KULIAH\\Belajar Dart\\Belajar Flutter\\PetaniTambak\\frontend\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex

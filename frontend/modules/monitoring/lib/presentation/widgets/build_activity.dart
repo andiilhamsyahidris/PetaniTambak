@@ -26,18 +26,21 @@ class BuildActivity extends StatelessWidget {
             placeholder: (context, url) => const CircularProgressIndicator(),
           ),
           title: Text(
-            'Title',
+            'Yey! Kondisi Tambakmu Baik',
             style: Theme.of(context)
                 .textTheme
                 .titleMedium!
                 .copyWith(color: Colors.white, fontWeight: FontWeight.w500),
           ),
-          subtitle: Text(
-            'Lorem Ipsum dolor sit Amet',
-            style: Theme.of(context)
-                .textTheme
-                .bodySmall!
-                .copyWith(color: Colors.white),
+          subtitle: Padding(
+            padding: const EdgeInsets.only(top: 10),
+            child: Text(
+              'Kondisi tambakmu sudah cukup baik. Tidak ada yang perlu dilakukan',
+              style: Theme.of(context)
+                  .textTheme
+                  .bodySmall!
+                  .copyWith(color: Colors.white),
+            ),
           ),
         ),
       ],

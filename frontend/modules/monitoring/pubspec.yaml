@@ -19,6 +19,12 @@ dependencies:
     path: ../auth
   
   cached_network_image: ^3.2.3
+  mqtt_client: ^9.7.2
+  http: ^0.13.5
+  equatable: ^2.0.5
+  rxdart: ^0.27.1
+  dartz: ^0.10.0-nullsafety.2
+  flutter_bloc: ^8.1.1
 
 dev_dependencies:
   flutter_test:

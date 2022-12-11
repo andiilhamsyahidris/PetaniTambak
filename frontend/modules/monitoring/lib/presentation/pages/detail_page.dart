@@ -13,6 +13,14 @@ class DetailPage extends StatefulWidget {
 }
 
 class DetailPageState extends State<DetailPage> {
+  MqttService mqttService = MqttService();
+
+  @override
+  void initState() {
+    super.initState();
+    mqttService.connect();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,13 +97,18 @@ class DetailPageState extends State<DetailPage> {
                               const SizedBox(
                                 height: 5,
                               ),
-                              Text(
-                                '27\u00b0',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .copyWith(color: Colors.white),
-                              )
+                              ValueListenableBuilder<String>(
+                                builder: (context, value, child) {
+                                  return Text(
+                                    '36.35\u00b0',
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .bodyMedium!
+                                        .copyWith(color: Colors.white),
+                                  );
+                                },
+                                valueListenable: mqttService.dataTemp,
+                              ),
                             ],
                           ),
                         ),
@@ -103,7 +116,7 @@ class DetailPageState extends State<DetailPage> {
                           height: 20,
                         ),
                         ReadMoreText(
-                          'Lorem Ipsum dolor sit Amet',
+                          'Kondisi suhu pada tambakmu cukup baik',
                           style: Theme.of(context)
                               .textTheme
                               .bodySmall!

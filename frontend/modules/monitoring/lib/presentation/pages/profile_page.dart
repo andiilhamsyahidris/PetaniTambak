@@ -16,6 +16,14 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+  MqttService mqttService = MqttService();
+
+  @override
+  void initState() {
+    super.initState();
+    mqttService.connect();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -120,14 +128,16 @@ class _ProfilePageState extends State<ProfilePage> {
                         ),
                         title: Row(
                           children: [
-                            Text(
-                              'Title',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .titleMedium!
-                                  .copyWith(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w500),
+                            Expanded(
+                              child: Text(
+                                'Yey! Kondisi Tambakmu Baik',
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .titleMedium!
+                                    .copyWith(
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w500),
+                              ),
                             ),
                             const SizedBox(
                               width: 10,
@@ -150,123 +160,19 @@ class _ProfilePageState extends State<ProfilePage> {
                             ),
                           ],
                         ),
-                        subtitle: Text(
-                          'Lorem Ipsum dolor sit Amet',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodySmall!
-                              .copyWith(color: Colors.white),
+                        subtitle: Padding(
+                          padding: const EdgeInsets.only(top: 10.0),
+                          child: Text(
+                            'Kondisi tambakmu sudah cukup baik. Tidak ada yang perlu dilakukan',
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodySmall!
+                                .copyWith(color: Colors.white),
+                          ),
                         ),
                       ),
                       const SizedBox(
                         height: 10,
-                      ),
-                      ListTile(
-                        tileColor: kSecondaryColor,
-                        contentPadding: const EdgeInsets.all(10.0),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0),
-                        ),
-                        leading: CachedNetworkImage(
-                          imageUrl:
-                              'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/test.png?alt=media&token=112fc3da-9dad-4598-88df-cbc5107a923b',
-                          placeholder: (context, url) =>
-                              const CircularProgressIndicator(),
-                        ),
-                        title: Row(
-                          children: [
-                            Text(
-                              'Title',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .titleMedium!
-                                  .copyWith(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w500),
-                            ),
-                            const SizedBox(
-                              width: 10,
-                            ),
-                            CachedNetworkImage(
-                              imageUrl:
-                                  'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/mark.png?alt=media&token=044531dc-3623-4fbc-9fc5-0d7219a84ee1',
-                              placeholder: (context, url) =>
-                                  const CircularProgressIndicator(),
-                              width: 15,
-                            ),
-                            Text(
-                              ' pH air',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodySmall!
-                                  .copyWith(
-                                      color: kYelllow2Color,
-                                      fontWeight: FontWeight.w300),
-                            ),
-                          ],
-                        ),
-                        subtitle: Text(
-                          'Lorem Ipsum dolor sit Amet ',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodySmall!
-                              .copyWith(color: Colors.white),
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      ListTile(
-                        tileColor: kSecondaryColor,
-                        contentPadding: const EdgeInsets.all(10.0),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0),
-                        ),
-                        leading: CachedNetworkImage(
-                          imageUrl:
-                              'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/test.png?alt=media&token=112fc3da-9dad-4598-88df-cbc5107a923b',
-                          placeholder: (context, url) =>
-                              const CircularProgressIndicator(),
-                        ),
-                        title: Row(
-                          children: [
-                            Text(
-                              'Title',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .titleMedium!
-                                  .copyWith(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w500),
-                            ),
-                            const SizedBox(
-                              width: 10,
-                            ),
-                            CachedNetworkImage(
-                              imageUrl:
-                                  'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/mark.png?alt=media&token=044531dc-3623-4fbc-9fc5-0d7219a84ee1',
-                              placeholder: (context, url) =>
-                                  const CircularProgressIndicator(),
-                              width: 15,
-                            ),
-                            Text(
-                              ' pH air',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodySmall!
-                                  .copyWith(
-                                      color: kYelllow2Color,
-                                      fontWeight: FontWeight.w300),
-                            ),
-                          ],
-                        ),
-                        subtitle: Text(
-                          'Lorem Ipsum dolor sit Amet',
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodySmall!
-                              .copyWith(color: Colors.white),
-                        ),
                       ),
                     ],
                   ),
@@ -334,7 +240,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               height: 5,
                             ),
                             const Text(
-                              '27\u00b0',
+                              '36.35\u00b0',
                               style: TextStyle(color: Colors.white),
                             )
                           ],
@@ -362,7 +268,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             Padding(
                               padding: const EdgeInsets.fromLTRB(0, 14, 16, 0),
                               child: ReadMoreText(
-                                'Lorem ipsum dolor sit amet',
+                                'Kondisi suhu pada tambakmu sudah cukup baik',
                                 trimLines: 4,
                                 trimMode: TrimMode.Line,
                                 trimCollapsedText: ' ... Selengkapnya',
@@ -408,8 +314,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             color: kMainColor,
-                            border:
-                                Border.all(color: kYellowColor, width: 2.0)),
+                            border: Border.all(color: kGreenColor, width: 2.0)),
                         child: Column(
                           children: [
                             Container(
@@ -434,9 +339,17 @@ class _ProfilePageState extends State<ProfilePage> {
                             const SizedBox(
                               height: 5,
                             ),
-                            const Text(
-                              '27\u00b0',
-                              style: TextStyle(color: Colors.white),
+                            ValueListenableBuilder<String>(
+                              builder: (context, value, child) {
+                                return Text(
+                                  value,
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyMedium!
+                                      .copyWith(color: Colors.white),
+                                );
+                              },
+                              valueListenable: mqttService.dataSalt,
                             )
                           ],
                         ),
@@ -463,107 +376,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             Padding(
                               padding: const EdgeInsets.fromLTRB(0, 14, 16, 0),
                               child: ReadMoreText(
-                                'Lorem ipsum dolor sit amet',
-                                trimLines: 4,
-                                trimMode: TrimMode.Line,
-                                trimCollapsedText: ' ... Selengkapnya',
-                                trimExpandedText: ' Tutup',
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodySmall!
-                                    .copyWith(color: Colors.white),
-                                lessStyle: TextStyle(
-                                    color: Colors.white.withOpacity(0.5)),
-                                moreStyle: TextStyle(
-                                    color: Colors.white.withOpacity(0.5)),
-                                delimiter: '',
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ),
-          SizedBox(
-            width: MediaQuery.of(context).size.width - 20,
-            child: InkWell(
-              onTap: () {
-                Navigator.pushNamed(context, DetailPage.routeName);
-              },
-              child: Card(
-                color: kSecondaryColor,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(25.0),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.all(22.0),
-                        decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: kMainColor,
-                            border: Border.all(color: kRedColor, width: 2.0)),
-                        child: Column(
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.all(10.0),
-                              decoration: const BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: kSecondaryColor,
-                                  boxShadow: [
-                                    BoxShadow(
-                                        color: kSecondaryColor,
-                                        blurRadius: 10.0,
-                                        spreadRadius: 3.0)
-                                  ]),
-                              child: CachedNetworkImage(
-                                imageUrl:
-                                    'https://firebasestorage.googleapis.com/v0/b/petanitambak-cf143.appspot.com/o/ph.png?alt=media&token=392979fc-0a8d-432a-84d3-f112fe8daae0',
-                                placeholder: (context, url) =>
-                                    const CircularProgressIndicator(),
-                                width: 50,
-                              ),
-                            ),
-                            const SizedBox(
-                              height: 5,
-                            ),
-                            const Text(
-                              '27\u00b0',
-                              style: TextStyle(color: Colors.white),
-                            )
-                          ],
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 25,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            Text(
-                              'pH air',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .titleLarge!
-                                  .copyWith(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w500),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(0, 14, 16, 0),
-                              child: ReadMoreText(
-                                'Lorem ipsum dolor sit amet',
+                                'Kondisi salinitas pada tambakmu sudah cukup baik',
                                 trimLines: 4,
                                 trimMode: TrimMode.Line,
                                 trimCollapsedText: ' ... Selengkapnya',
